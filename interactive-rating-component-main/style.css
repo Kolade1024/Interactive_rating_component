@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass");
+
+
+
+/* || VARIABLES */
+
+*:root{
+    /* COLOR */
+    --BG_COLOR : hsl(216, 12%, 8%);
+    --COMP-BG_COLOR : hsl(213, 19%, 18%);
+    --COMP-BG_COLOR2 : hsl(214, 19%, 23%);
+    --RATING-BG_COLOR : hsl(216, 12%, 54%);
+    --RATING_COLOR : hsl(217, 12%, 63%);
+    --HEADER_COLOR : hsl(0, 0%, 100%);
+    --SUBMIT : hsl(25, 97%, 53%);
+
+    /* FONTS */
+    --FF : "Overpass";
+    --FS : 15px;
+    --FW1: 400;
+    --FW2 : 700;
+}
+
+/* RESET */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: var(--FF);
+    min-height: 100vh;
+    background: var(--BG_COLOR);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+
+
+.state1{
+    display:flex;
+    flex-direction: column;
+    background: var(--COMP-BG_COLOR);
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    gap: 1.5rem;
+    max-width: 400px;
+}
+
+
+.img_cont{
+    width: 100%;
+}
+
+.starIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:20%;
+    padding: 1rem;
+    border-radius: 100%;
+    background-color:var(--COMP-BG_COLOR2);
+}
+
+.starIcon img,h1,p,button,.components{
+    width: 100%;
+}
+
+h1{
+    color:var(--HEADER_COLOR);
+}
+
+.content{
+    color: var(--RATING_COLOR);
+}
+
+.components{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.components .rating{
+    color: var(--RATING_COLOR);
+    background-color: var(--COMP-BG_COLOR2);
+    padding: 0.7rem 1.1rem;
+    border-radius: 100%;
+    font-size: 1rem;
+    font-weight: var(--FW1);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+button{
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background: var(--SUBMIT);
+    color: var(--HEADER_COLOR);
+    font-weight: var(--FW2);
+    letter-spacing: 2px;
+}
+
+.warning{
+    display: none;
+    color: red;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/* ACTIVE STATES */
+ button:hover{
+    background-color: white;
+    color:var(--SUBMIT);
+    transition: 0.5s;
+    cursor: pointer;
+ }
+
+ .components .over:hover{
+    background-color: var(--RATING-BG_COLOR);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+ }
+
+ .components .rated{
+    background-color: var(--SUBMIT);
+    color: white;
+    cursor: pointer;
+ }
+
+
+
+
+ /* Thank You State */
+
+ 
+.thanks{
+    display:none;
+    flex-direction: column;
+    background: var(--COMP-BG_COLOR);
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    gap: 1.5rem;
+    max-width: 400px;
+    width: 85%;
+    transition: 2s;
+    transform: ;
+}
+
+ .thank_illustration img{
+    margin-top: 1rem;
+ }
+
+ .selected{
+    width: auto;
+    color: var(--SUBMIT);
+    background: var(--COMP-BG_COLOR2);
+    padding: 0.8rem;
+    border-radius: 1.3rem;
+    font-size: var(--FS);
+ }
+
+ .Thank_you, .appreciation{
+    text-align: center;
+ }
+
+ .appreciation{
+    color: var(--RATING_COLOR);
+    margin-bottom: 1rem;
+ }
+
+
+ 
+
+
+
+
+

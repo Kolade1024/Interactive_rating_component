@@ -20,5 +20,5 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://kolade1024.github.io/Interactive_rating_component/)
+- Live Site URL: [Live site URL ](https://kolade1024.github.io/Interactive_rating_component/)
 
